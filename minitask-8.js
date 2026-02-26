@@ -13,13 +13,9 @@ const movie = {
             role: "Antagonis"
         }
     ],
-    getShow: function() {
-        return {
-            title: this.title,
-            image: this.image,
-            genre: this.genre
-        }
-    },
+    // getShow: function() {
+    //     return `Judul= ${this.title}, Gambar= ${this.image}, Genre = ${this.genre}`;
+    // },
     setTittle(judulBaru) {    
         this.title = judulBaru;
     },
@@ -28,7 +24,7 @@ const movie = {
     }
 }
 
-console.log(`Judul= ${movie.title}, Gambar= ${movie.image}, Genre = ${movie.genre}`)
+console.log(`Judul= ${this.title}, Gambar= ${this.image}, Genre = ${this.genre}`)
 console.log(`Cast: ${movie.cast[0].name}, ${movie.cast[1].name}`)
 movie.setTittle("Hantu Manis Imut");
 // console.log(movie.getShow())
