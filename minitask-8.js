@@ -14,10 +14,17 @@ const movie = {
         }
     ],
     getShow: function() {
-        return `Judul= ${this.title}, Gambar= ${this.image}, Genre = ${this.genre}`;
+        return `
+        Judul= ${this.title}, Gambar= ${this.image}, Genre = ${this.genre}
+        `;
     },
     getNameCast: function() {
-        return `Cast: ${this.cast[0].name}, ${this.cast[1].name}`;
+        let actorList = "";
+        for (let i = 0; i < this.cast.length; i++) {
+          const actor = this.cast[i];
+          actorList += `${actor.name} sebagai ${actor.role}\n`;
+        }
+        return actorList;
     },
     setTittle(judulBaru) {    
         this.title = judulBaru;
