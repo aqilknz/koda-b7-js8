@@ -28,8 +28,8 @@ const movie = {
     }
 }
 
-console.log(`a. Judul= ${movie.title}, Gambar= ${movie.image}, Genre = ${movie.genre}`)
-console.log(`b. Cast: ${movie.cast[0].name}, ${movie.cast[1].name}`)
+console.log(`Judul= ${movie.title}, Gambar= ${movie.image}, Genre = ${movie.genre}`)
+console.log(`Cast: ${movie.cast[0].name}, ${movie.cast[1].name}`)
 movie.setTittle("Hantu Manis Imut");
 // console.log(movie.getShow())
 movie.setImage("https://www.pinterest.com/pin/624804148292484486/")
